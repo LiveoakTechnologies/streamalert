@@ -1,0 +1,54 @@
+{
+  "id": "liveoak-us",
+  "modules": {
+    "cloudtrail": {
+      "enable_kinesis": false,
+      "enable_logging": true
+    },
+    "cloudwatch_monitoring": {
+      "enabled": true,
+      "kinesis_alarms_enabled": false
+    },
+    "kinesis": {
+      "streams": {
+        "create_user": true,
+        "retention": 30,
+        "shards": 2
+      }
+    },
+    "s3_events": [
+      {
+        "bucket_id": "loa-production",
+        "enable_events": true
+      },
+      {
+        "bucket_id": "loa-production-us",
+        "enable_events": true
+      }
+    ],
+    "stream_alert": {
+      "alert_processor": {
+        "current_version": "$LATEST",
+        "enable_metrics": false,
+        "log_level": "info",
+        "memory": 256,
+        "timeout": 10
+      },
+      "rule_processor": {
+        "current_version": "$LATEST",
+        "enable_metrics": false,
+        "log_level": "info",
+        "memory": 256,
+        "timeout": 10
+      }
+    }
+  },
+  "outputs": {
+    "kinesis": [
+      "username",
+      "access_key_id",
+      "secret_key"
+    ]
+  },
+  "region": "us-east-1"
+}
