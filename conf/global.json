@@ -1,8 +1,8 @@
 {
   "account": {
     "aws_account_id": "009964960881",
-    "kms_key_alias": "liveoak-streamalert_secrets",
-    "prefix": "liveoak-streamalert",
+    "kms_key_alias": "loastreamalert_secrets",
+    "prefix": "loastreamalert",
     "region": "us-east-1"
   },
   "general": {
@@ -35,7 +35,7 @@
     }
   },
   "terraform": {
-    "tfstate_bucket": "liveoak-streamalert.streamalert.terraform.state",
+    "tfstate_bucket": "loastreamalert.streamalert.terraform.state",
     "tfstate_s3_key": "stream_alert_state/terraform.tfstate",
     "tfvars": "terraform.tfvars"
   }
