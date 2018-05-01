@@ -22,7 +22,7 @@
       }
     },
     "schedule_expression": "rate(1 minute)",
-    "source_bucket": "liveoak-streamalert.streamalert.source",
+    "source_bucket": "loastreamalert.streamalert.source",
     "source_current_hash": "<auto_generated>",
     "source_object_key": "<auto_generated>",
     "timeout": 60,
