@@ -1,5 +1,5 @@
 {
-  "id": "liveoak-us",
+  "id": "liveoakUS",
   "modules": {
     "cloudtrail": {
       "enable_kinesis": false,
