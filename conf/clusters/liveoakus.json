@@ -1,5 +1,5 @@
 {
-  "id": "liveoakUS",
+  "id": "liveoakus",
   "modules": {
     "cloudtrail": {
       "enable_kinesis": false,
@@ -16,16 +16,6 @@
         "shards": 2
       }
     },
-    "s3_events": [
-      {
-        "bucket_id": "loa-production",
-        "enable_events": true
-      },
-      {
-        "bucket_id": "loa-production-us",
-        "enable_events": true
-      }
-    ],
     "stream_alert": {
       "alert_processor": {
         "current_version": "$LATEST",
