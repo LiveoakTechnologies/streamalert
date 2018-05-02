@@ -21,7 +21,8 @@ _CRITICAL_EVENTS = {
     'DisableRule'
 }
 
-@rule(logs=['cloudtrail:events'])
+@rule(logs=['cloudtrail:events'],
+      outputs=['slack:streamalert_ops_alerts'])
 def cloudtrail_critical_api_calls(rec):
     """
     author:           airbnb_csirt

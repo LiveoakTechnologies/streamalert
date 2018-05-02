@@ -2,8 +2,9 @@
   "id": "liveoakus",
   "modules": {
     "cloudtrail": {
-      "enable_kinesis": false,
-      "enable_logging": true
+      "enable_kinesis": true,
+      "enable_logging": true,
+      "existing_trail": true
     },
     "cloudwatch_monitoring": {
       "enabled": true,
@@ -12,9 +13,12 @@
     "kinesis": {
       "streams": {
         "create_user": true,
-        "retention": 30,
+        "retention": 24,
         "shards": 2
       }
+    },
+    "kinesis_events": {
+      "enabled": true
     },
     "stream_alert": {
       "alert_processor": {

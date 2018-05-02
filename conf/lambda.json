@@ -23,8 +23,8 @@
     },
     "schedule_expression": "rate(1 minute)",
     "source_bucket": "loastreamalert.streamalert.source",
-    "source_current_hash": "<auto_generated>",
-    "source_object_key": "<auto_generated>",
+    "source_current_hash": "VG/vrdv3mnzMLG+Rw8gbi4hNCQdN09CZFtB3CBwiIPc=",
+    "source_object_key": "alert_merger/alert_merger_1.6.1_20180502_T062649.zip",
     "timeout": 60,
     "vpc_config": {
       "security_group_ids": [],
@@ -52,8 +52,8 @@
       }
     },
     "source_bucket": "loastreamalert.streamalert.source",
-    "source_current_hash": "<auto_generated>",
-    "source_object_key": "<auto_generated>",
+    "source_current_hash": "HvX8uNULOaYSyi9hpXKG6HPqyvB2rbDA5EyY2F1eZ+Q=",
+    "source_object_key": "alert_processor/alert_processor_1.6.1_20180502_T062641.zip",
     "timeout": 60,
     "vpc_config": {
       "security_group_ids": [],
@@ -69,14 +69,14 @@
     "handler": "stream_alert.athena_partition_refresh.main.handler",
     "log_level": "info",
     "source_bucket": "loastreamalert.streamalert.source",
-    "source_current_hash": "<auto_generated>",
-    "source_object_key": "<auto_generated>"
+    "source_current_hash": "efXQhIMun37Nv6ifcyWS5cauMlp0xL2Um+oaxKtM5SE=",
+    "source_object_key": "athena_partition_refresh/athena_partition_refresh_1.6.1_20180502_T062650.zip"
   },
   "rule_processor_config": {
     "handler": "stream_alert.rule_processor.main.handler",
     "source_bucket": "loastreamalert.streamalert.source",
-    "source_current_hash": "<auto_generated>",
-    "source_object_key": "<auto_generated>",
+    "source_current_hash": "pS8lo6W82fNGdRISuA45P9Nj7Spe/7uhA+YGaCB2nOI=",
+    "source_object_key": "rule_processor/rule_processor_1.6.1_20180502_T062635.zip",
     "third_party_libraries": [
       "netaddr"
     ]

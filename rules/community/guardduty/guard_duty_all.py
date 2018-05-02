@@ -2,7 +2,9 @@
 from stream_alert.shared.rule import rule
 
 
-@rule(logs=['cloudwatch:events'], matchers=['guard_duty'])
+@rule(logs=['cloudwatch:events'], 
+      matchers=['guard_duty'],
+      outputs=['slack:streamalert_ops_alerts'])
 def guard_duty_all(*_):
     """
     author:         spiper

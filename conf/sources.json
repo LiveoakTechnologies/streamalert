@@ -1,6 +1,6 @@
 {
   "kinesis": {
-    "prefix_cluster1_stream_alert_kinesis": {
+    "loastreamalert_liveoakus_stream_alert_kinesis": {
       "logs": [
         "cloudwatch",
         "ghe",
