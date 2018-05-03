@@ -1,7 +1,7 @@
 {
   "account": {
     "aws_account_id": "009964960881",
-    "kms_key_alias": "loastreamalert_secrets",
+    "kms_key_alias": "loastreamalert_key",
     "prefix": "loastreamalert",
     "region": "us-east-1"
   },

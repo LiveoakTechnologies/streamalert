@@ -7,7 +7,8 @@ from stream_alert.shared.rule import rule
     logs=['cloudwatch:events'],
     req_subkeys={
         'detail': ['eventName', 'requestParameters']
-    })
+    },
+    outputs=['slack:ops_alerts'])
 def cloudtrail_security_group_ingress_anywhere(rec):
     """
     author:         @mimeframe, @ryandeivert

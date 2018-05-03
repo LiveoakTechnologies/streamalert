@@ -22,6 +22,6 @@
   ],
   "slack": [
     "sample-channel",
-    "streamalert_ops_alerts"
+    "ops_alerts"
   ]
 }

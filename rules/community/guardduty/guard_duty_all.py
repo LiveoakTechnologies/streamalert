@@ -4,7 +4,7 @@ from stream_alert.shared.rule import rule
 
 @rule(logs=['cloudwatch:events'], 
       matchers=['guard_duty'],
-      outputs=['slack:streamalert_ops_alerts'])
+      outputs=['slack:ops_alerts'])
 def guard_duty_all(*_):
     """
     author:         spiper
@@ -15,4 +15,9 @@ def guard_duty_all(*_):
     testing:        From the GuardDuty AWS page (https://console.aws.amazon.com/guardduty/home)
                     click the button to "Generate Sample Findings"
     """
-    return True
+    try:
+        severity = rec['severity']
+        if severity > 2:
+            return True
+    except:
+        pass

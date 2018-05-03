@@ -6,7 +6,8 @@ from stream_alert.shared.rule import rule
     logs=['cloudwatch:events'],
     req_subkeys={
         'detail': ['userIdentity', 'eventType']
-    })
+    },
+    outputs=['slack:ops_alerts'])
 def cloudtrail_root_account_usage(rec):
     """
     author:           airbnb_csirt

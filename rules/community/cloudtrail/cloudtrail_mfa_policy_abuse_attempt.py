@@ -16,7 +16,8 @@ _IAM_ACTIONS = {
 _EVENT_NAMES = {'CreateVirtualMFADevice', 'EnableMFADevice'}
 
 
-@rule(logs=['cloudtrail:events'])
+@rule(logs=['cloudtrail:events'],
+      outputs=['slack:ops_alerts'])
 def cloudtrail_mfa_policy_abuse_attempt(rec):
     """
     author:           Scott Piper of Summit Route in collaboration with Duo Security
